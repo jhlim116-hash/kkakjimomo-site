@@ -33,7 +33,7 @@ export default function KidsPage() {
       extra: null,
       body: (U: any) => (
         <span>
-          읽을 수 있는 것과 읽는 사람이 되는 것은 달라요. 신경과학자 메리앤 울프는 <U>독서하는 뇌는 독서를 통해서만 만들어진다</U>고 말해요. 초등 1-2학년 시기는 <U>진짜 독서의 출발점</U>이에요. 이 시기에 형성된 독서에 대한 태도와 습관이 <U>평생의 독서 정체성</U>을 결정해요. 핀란드 독서교육연구소(2020)는 또래와 함께하는 <U>토론식 독서</U>가 독서 동기와 이해력을 동시에 높이는 가장 효과적인 방법임을 밝혔어요.
+          읽을 수 있는 것과 읽는 사람이 되는 것은 달라요. 신경과학자 메리앤 울프는 <U>독서하는 뇌는 독서를 통해서만 만들어진다</U>고 말해요. 초등 1-2학년 시기는 <U>진짜 독서의 출발점</U>이에요. 이 시기에 형성된 독서에 대한 태도와 습관이 <U>평생의 독서 정체성</U>을 결정해요.
         </span>
       ),
     },
@@ -48,7 +48,7 @@ export default function KidsPage() {
       extra: null,
       body: (U: any) => (
         <span>
-          초등 3-4학년은 <U>한국사를 처음 만나는 시기</U>예요. 이 첫 만남이 역사를 평생 좋아하는 사람이 될지, 외워야 하는 과목으로 기억할지를 결정해요. 2022 개정 교육과정은 역사 교육의 핵심을 <U>사실 암기에서 역사적 사고력으로 전환</U>했어요. 역사교육학회 연구(2021)는 서사 중심의 역사 학습이 단순 암기 방식보다 <U>장기 기억률을 3.1배</U> 높인다고 밝혀요. 책으로 만나는 한국사는 인물의 감정, 시대의 공기, 사건의 맥락이 살아있어 아이는 역사를 <U>경험하듯 이해</U>하게 돼요.
+          초등 3-4학년은 <U>한국사를 처음 만나는 시기</U>예요. 이 첫 만남이 역사를 평생 좋아하는 사람이 될지를 결정해요. 역사교육학회 연구(2021)는 서사 중심의 역사 학습이 단순 암기 방식보다 <U>장기 기억률을 3.1배</U> 높인다고 밝혀요.
         </span>
       ),
     },
@@ -63,7 +63,7 @@ export default function KidsPage() {
       extra: null,
       body: (U: any) => (
         <span>
-          세계사는 암기 과목이 아니에요. <U>우리가 사는 세상이 어떻게 지금의 모양이 되었는지</U>, 그 거대한 흐름을 이해하는 일이에요. 초등 고학년은 <U>추상적 사고가 본격적으로 열리는 시기</U>예요. 피아제의 인지발달 이론에 따르면 이 시기에 인과관계와 구조적 사고를 훈련하지 않으면 중학 이후의 세계 탐구가 어려워져요. OECD 교육 보고서(2022)는 세계사 이해를 <U>글로벌 시대의 핵심 문해력</U>으로 규정해요.
+          세계사는 암기 과목이 아니에요. <U>우리가 사는 세상이 어떻게 지금의 모양이 되었는지</U> 이해하는 일이에요. OECD 교육 보고서(2022)는 세계사 이해를 <U>글로벌 시대의 핵심 문해력</U>으로 규정해요.
         </span>
       ),
     },
@@ -71,8 +71,30 @@ export default function KidsPage() {
 
   return (
     <main style={{fontFamily:"Pretendard,-apple-system,sans-serif",background:"#fff",minHeight:"100vh",letterSpacing:"-0.012em"}}>
+      <style>{`
+        .kids-nav { padding: 18px 40px; }
+        .kids-hero { padding: 72px 40px 64px; }
+        .kids-hero-title { font-size: 44px; }
+        .kids-section { padding: 56px 40px; }
+        .kids-grid { grid-template-columns: 1fr 360px; gap: 64px; }
+        .kids-no { font-size: 120px; }
+        .kids-title { font-size: 28px; }
+        .kids-contact { padding: 72px 40px; }
+        .kids-footer { padding: 28px 40px; }
+        @media (max-width: 768px) {
+          .kids-nav { padding: 16px 20px !important; }
+          .kids-hero { padding: 40px 20px 32px !important; }
+          .kids-hero-title { font-size: 28px !important; max-width: 100% !important; }
+          .kids-section { padding: 36px 20px !important; }
+          .kids-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+          .kids-no { font-size: 72px !important; margin-bottom: -8px !important; }
+          .kids-title { font-size: 22px !important; }
+          .kids-contact { padding: 48px 20px !important; }
+          .kids-footer { padding: 24px 20px !important; }
+        }
+      `}</style>
 
-      <nav style={{padding:"18px 40px",display:"flex",alignItems:"center",justifyContent:"space-between",borderBottom:"0.5px solid #EAEAEA"}}>
+      <nav className="kids-nav" style={{display:"flex",alignItems:"center",justifyContent:"space-between",borderBottom:"0.5px solid #EAEAEA"}}>
         <a href="/" style={{textDecoration:"none",display:"flex",alignItems:"center",gap:"10px"}}>
           <div style={{width:"22px",height:"22px",background:"#1F7A5E",borderRadius:"50% 50% 45% 45%"}} />
           <div>
@@ -83,22 +105,21 @@ export default function KidsPage() {
         <span style={{fontFamily:"monospace",fontSize:"11px",color:"#555"}}>subscribe</span>
       </nav>
 
-      <div style={{padding:"72px 40px 64px",background:"#0A0A0A",color:"white",position:"relative",overflow:"hidden"}}>
+      <div className="kids-hero" style={{background:"#0A0A0A",color:"white",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",right:"40px",top:"50%",transform:"translateY(-50%)",fontSize:"200px",fontWeight:800,color:"rgba(255,255,255,0.04)",letterSpacing:"-0.05em",lineHeight:1,userSelect:"none"}}>01</div>
         <div style={{fontFamily:"monospace",fontSize:"10px",letterSpacing:"0.2em",color:"#1F7A5E",marginBottom:"18px"}}>NO.01 — KID'S BOOK CLUB</div>
-        <div style={{fontSize:"44px",fontWeight:800,letterSpacing:"-0.04em",lineHeight:1.1,marginBottom:"20px",maxWidth:"560px"}}>책과 함께<br/>자라는 아이들</div>
+        <div className="kids-hero-title" style={{fontWeight:800,letterSpacing:"-0.04em",lineHeight:1.1,marginBottom:"20px",maxWidth:"560px"}}>책과 함께<br/>자라는 아이들</div>
         <div style={{fontSize:"13px",color:"#888",lineHeight:1.9,maxWidth:"460px"}}>그림책 창의미술부터 한국사, 세계사 북클럽까지. 나이에 맞게, 책과 함께 성장하는 깍지모모의 어린이 독서 프로그램이에요.</div>
       </div>
 
       {programs.map((p) => (
-        <div key={p.no} style={{borderBottom:"0.5px solid #eee",padding:"56px 40px"}}>
-          <div style={{display:"grid",gridTemplateColumns:"1fr 360px",gap:"64px",alignItems:"end"}}>
+        <div key={p.no} style={{borderBottom:"0.5px solid #eee"}} className="kids-section">
+          <div className="kids-grid" style={{display:"grid",alignItems:"start"}}>
 
-            {/* 왼쪽 */}
             <div>
-              <div style={{fontSize:"120px",fontWeight:800,color:"#F0F0F0",lineHeight:1,letterSpacing:"-0.05em",marginBottom:"-16px"}}>{p.no}</div>
+              <div className="kids-no" style={{fontWeight:800,color:"#F0F0F0",lineHeight:1,letterSpacing:"-0.05em",marginBottom:"-16px"}}>{p.no}</div>
               <div style={{fontFamily:"monospace",fontSize:"10px",color:"#1F7A5E",letterSpacing:"0.18em",marginBottom:"12px"}}>{p.tag}</div>
-              <div style={{fontSize:"28px",fontWeight:800,letterSpacing:"-0.025em",marginBottom:"6px"}}>{p.title}</div>
+              <div className="kids-title" style={{fontWeight:800,letterSpacing:"-0.025em",marginBottom:"6px"}}>{p.title}</div>
               <div style={{fontFamily:"monospace",fontSize:"11px",color:"#888",marginBottom:"32px"}}>{p.en}</div>
               <div style={{borderLeft:"2px solid #1F7A5E",paddingLeft:"18px",marginBottom:"28px"}}>
                 <div style={{fontSize:"14px",fontStyle:"italic",color:"#0A0A0A",lineHeight:1.6,marginBottom:"8px"}}>"{p.quote}"</div>
@@ -109,7 +130,6 @@ export default function KidsPage() {
               </div>
             </div>
 
-            {/* 오른쪽 카드 */}
             <div style={{display:"flex",flexDirection:"column",gap:"1px",background:"#eee"}}>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:"1px",background:"#eee"}}>
                 {[{label:"대상",value:p.target},{label:"시간",value:"50분"},{label:"정원",value:"4명"}].map((item) => (
@@ -142,7 +162,7 @@ export default function KidsPage() {
         </div>
       ))}
 
-      <div style={{padding:"72px 40px",background:"#F7F6F3",textAlign:"center"}}>
+      <div className="kids-contact" style={{background:"#F7F6F3",textAlign:"center"}}>
         <div style={{fontFamily:"monospace",fontSize:"10px",color:"#1F7A5E",letterSpacing:"0.2em",marginBottom:"16px"}}>CONTACT</div>
         <div style={{fontSize:"24px",fontWeight:800,letterSpacing:"-0.02em",marginBottom:"12px"}}>궁금한 점이 있으신가요?</div>
         <div style={{fontSize:"13px",color:"#555",lineHeight:1.9,marginBottom:"32px"}}>프로그램 내용, 수업 일정, 비용 등 편하게 카카오톡 채널로 문의해 주세요</div>
@@ -151,7 +171,7 @@ export default function KidsPage() {
         </a>
       </div>
 
-      <footer style={{padding:"28px 40px",background:"white",display:"flex",alignItems:"center",justifyContent:"space-between",borderTop:"0.5px solid #eee"}}>
+      <footer className="kids-footer" style={{background:"white",display:"flex",alignItems:"center",justifyContent:"space-between",borderTop:"0.5px solid #eee"}}>
         <div style={{display:"flex",alignItems:"center",gap:"14px"}}>
           <div style={{width:"28px",height:"28px",background:"#1F7A5E",borderRadius:"50% 50% 45% 45%"}} />
           <div>
@@ -160,12 +180,12 @@ export default function KidsPage() {
           </div>
         </div>
         <a href="https://www.instagram.com/kkakjimomo_book_agit" target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",gap:"6px",textDecoration:"none",color:"#0A0A0A"}}>
-         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-           <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-           <circle cx="12" cy="12" r="4"/>
-           <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
-         </svg>
-         <span style={{fontFamily:"monospace",fontSize:"11px"}}>@kkakjimomo_book_agit</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
+          </svg>
+          <span style={{fontFamily:"monospace",fontSize:"11px"}}>@kkakjimomo_book_agit</span>
         </a>
       </footer>
 
