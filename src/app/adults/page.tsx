@@ -55,7 +55,7 @@ export default function AdultsPage() {
       title: "나를 꺼내는 한 줄",
       subtitle: "어른 필사 독서 모임",
       desc: "혼자 읽을 때와 함께 읽을 때, 책은 전혀 다르게 기억됩니다. 조용히 자신의 이야기를 꺼내보고 싶은 분을 위한 모임.",
-      meta: ["매달 마지막 주 금요일 · 10:30–12:30"],
+      meta: ["매달 마지막 주 금요일", "10:30–12:30"],
       link: "https://naver.me/5kPNeAHl",
     },
     {
@@ -64,7 +64,7 @@ export default function AdultsPage() {
       title: "그림책의 장면과 서사",
       subtitle: "어른 그림책 모임",
       desc: "익숙한 그림책 장면들을 낯설고 신선하게 다시 바라보는 시간. 논제 중심의 이야기로 그림책을 바라보는 폭을 넓혀갑니다.",
-      meta: ["매달 둘째 주 금요일 · 13:00–15:00"],
+      meta: ["매달 둘째 주 금요일", "13:00–14:30"],
       link: null,
     },
     {
@@ -73,7 +73,7 @@ export default function AdultsPage() {
       title: "Momo's Readers Club",
       subtitle: "영어 원서 읽기 모임",
       desc: "영어를 잘 못해도 괜찮습니다. 이야기를 즐기고 함께 나누는 마음이 가장 중요하니까요. 2달에 1권씩, 천천히.",
-      meta: ["매달 마지막 주 수요일 · 13:00–14:30"],
+      meta: ["매달 마지막 주 수요일", "13:00–14:30"],
       link: "https://naver.me/GKbRu5U2",
     },
     {
@@ -82,7 +82,7 @@ export default function AdultsPage() {
       title: "일본어로 감동을 읽는 시간",
       subtitle: "일본어 그림책 모임",
       desc: "일본어를 몰라도, 책이 없어도 괜찮습니다. 그림책을 좋아하는 마음 하나면 충분해요.",
-      meta: ["매달 마지막 주 금요일 · 13:00–15:00", "강사: 김연정 선생님"],
+      meta: ["매달 마지막 주 금요일", "13:00–15:00", "강사: 김연정 선생님"],
       link: "https://naver.me/GwfgUB9T",
     },
   ];
