@@ -140,17 +140,17 @@ export default function AdultsPage() {
             <p className="c-subtitle" style={{fontSize:"11px",fontWeight:300,marginBottom:"0.85rem"}}>{p.subtitle}</p>
             <p className="c-desc" style={{fontSize:"12px",lineHeight:1.9,fontWeight:300,marginBottom:"1.25rem",flex:1}}>{p.desc}</p>
             <div style={{marginTop:"auto",display:"flex",flexDirection:"column",gap:"10px"}}>
+              {p.meta && (
+                <div style={{display:"flex",flexDirection:"column",gap:"4px"}}>
+                  {p.meta.map((m, i) => (
+                    <span key={i} className="c-meta" style={{fontSize:"11px",fontWeight:300}}>{m}</span>
+                  ))}
+                </div>
+              )}
               {!p.link ? (
                 <span className="c-coming" style={{fontSize:"9px",fontWeight:700,padding:"3px 9px",borderRadius:"2px",alignSelf:"flex-start"}}>오픈 예정</span>
               ) : (
-                <>
-                  <div style={{display:"flex",flexDirection:"column",gap:"4px"}}>
-                    {p.meta?.map((m, i) => (
-                      <span key={i} className="c-meta" style={{fontSize:"11px",fontWeight:300}}>{m}</span>
-                    ))}
-                  </div>
-                  <a href={p.link} target="_blank" rel="noopener noreferrer" className="c-btn" style={{display:"inline-block",fontSize:"10px",fontWeight:700,letterSpacing:"0.15em",textTransform:"uppercase" as const,border:"1px solid",padding:"7px 16px",textDecoration:"none",borderRadius:"2px",alignSelf:"flex-start"}}>신청하기 ↗</a>
-                </>
+                <a href={p.link} target="_blank" rel="noopener noreferrer" className="c-btn" style={{display:"inline-block",fontSize:"10px",fontWeight:700,letterSpacing:"0.15em",textTransform:"uppercase" as const,border:"1px solid",padding:"7px 16px",textDecoration:"none",borderRadius:"2px",alignSelf:"flex-start"}}>신청하기 ↗</a>
               )}
             </div>
           </div>
