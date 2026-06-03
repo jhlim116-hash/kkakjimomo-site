@@ -31,8 +31,7 @@ const hoverStyle = `
     .adults-nav { padding: 16px 20px !important; }
     .adults-hero { padding: 40px 20px 32px !important; }
     .adults-hero-title { font-size: 28px !important; }
-    .adults-grid { grid-template-columns: 1fr !important; }
-    .adult-card { border-right: 2px solid #0a0a0a !important; }
+    .adults-grid { grid-template-columns: 1fr 1fr !important; }
     .workshop-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
     .adults-contact { padding: 48px 20px !important; }
     .adults-footer { padding: 24px 20px !important; }
