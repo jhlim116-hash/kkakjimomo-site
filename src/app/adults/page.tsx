@@ -34,13 +34,14 @@ const hoverStyle = `
     .adults-hero { padding: 40px 20px 32px !important; }
     .adults-hero-title { font-size: 28px !important; }
     .adults-grid { grid-template-columns: 1fr 1fr !important; border-left: none !important; }
-    .adult-card { padding: 1rem 0.6rem !important; border-right: 2px solid #0a0a0a !important; border-left: 2px solid #0a0a0a !important; }
-    .adult-card .c-num { font-size: 22px !important; }
+    .adult-card { padding: 1.25rem 1rem !important; border-right: 2px solid #0a0a0a !important; border-left: 2px solid #0a0a0a !important; }
+    .adult-card .c-num { font-size: 28px !important; }
     .adult-card .c-tag { font-size: 8px !important; padding: 2px 6px !important; }
-    .adult-card .c-title { font-size: 13px !important; }
-    .adult-card .c-subtitle { font-size: 10px !important; }
-    .adult-card .c-desc { font-size: 11px !important; line-height: 1.7 !important; }
-.adult-card .c-meta { font-size: 10px !important; word-break: keep-all !important; }    .workshop-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
+    .adult-card .c-title { font-size: 14px !important; }
+    .adult-card .c-subtitle { font-size: 11px !important; }
+    .adult-card .c-desc { font-size: 12px !important; line-height: 1.8 !important; }
+    .adult-card .c-meta { font-size: 11px !important; word-break: break-all !important; line-height: 1.6 !important; }
+    .workshop-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
     .adults-contact { padding: 48px 20px !important; }
     .adults-footer { padding: 24px 20px !important; }
   }
