@@ -40,8 +40,7 @@ const hoverStyle = `
     .adult-card .c-title { font-size: 13px !important; }
     .adult-card .c-subtitle { font-size: 10px !important; }
     .adult-card .c-desc { font-size: 11px !important; line-height: 1.7 !important; }
-    .adult-card .c-meta { font-size: 10px !important; }
-    .workshop-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
+.adult-card .c-meta { font-size: 10px !important; word-break: keep-all !important; }    .workshop-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
     .adults-contact { padding: 48px 20px !important; }
     .adults-footer { padding: 24px 20px !important; }
   }
