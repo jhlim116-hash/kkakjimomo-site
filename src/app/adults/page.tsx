@@ -24,14 +24,23 @@ const hoverStyle = `
   .adults-nav { padding: 18px 40px; }
   .adults-hero { padding: 72px 40px 64px; }
   .adults-hero-title { font-size: 44px; }
-  .adults-grid { grid-template-columns: 1fr 1fr; border-left: 2px solid #0a0a0a; border-top: 2px solid #0a0a0a; align-items: stretch; }  .adults-footer { padding: 28px 40px; }
+  .adults-grid { grid-template-columns: 1fr 1fr; border-left: 2px solid #0a0a0a; border-top: 2px solid #0a0a0a; align-items: stretch; }
+  .adults-contact { padding: 72px 40px; }
+  .adults-footer { padding: 28px 40px; }
   .workshop-grid { grid-template-columns: 1fr 1fr; }
 
   @media (max-width: 768px) {
     .adults-nav { padding: 16px 20px !important; }
     .adults-hero { padding: 40px 20px 32px !important; }
     .adults-hero-title { font-size: 28px !important; }
-    .adults-grid { grid-template-columns: 1fr 1fr !important; }
+    .adults-grid { grid-template-columns: 1fr 1fr !important; border-left: none !important; }
+    .adult-card { padding: 1rem 0.6rem !important; border-right: 2px solid #0a0a0a !important; border-left: 2px solid #0a0a0a !important; }
+    .adult-card .c-num { font-size: 22px !important; }
+    .adult-card .c-tag { font-size: 8px !important; padding: 2px 6px !important; }
+    .adult-card .c-title { font-size: 13px !important; }
+    .adult-card .c-subtitle { font-size: 10px !important; }
+    .adult-card .c-desc { font-size: 11px !important; line-height: 1.7 !important; }
+    .adult-card .c-meta { font-size: 10px !important; }
     .workshop-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
     .adults-contact { padding: 48px 20px !important; }
     .adults-footer { padding: 24px 20px !important; }
