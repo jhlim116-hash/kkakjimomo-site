@@ -24,8 +24,7 @@ const hoverStyle = `
   .adults-nav { padding: 18px 40px; }
   .adults-hero { padding: 72px 40px 64px; }
   .adults-hero-title { font-size: 44px; }
-.adults-grid { grid-template-columns: 1fr 1fr; border-left: 2px solid #0a0a0a; border-top: 2px solid #0a0a0a; align-items: stretch; }  .adults-contact { padding: 72px 40px; }
-  .adults-footer { padding: 28px 40px; }
+.adults-grid { grid-template-columns: 1fr 1fr; border-left: 2px solid #0a0a0a; border-top: 2px solid #0a0a0a; align-items: stretch; }  .adults-footer { padding: 28px 40px; }
   .workshop-grid { grid-template-columns: 1fr 1fr; }
 
   @media (max-width: 768px) {
@@ -57,7 +56,7 @@ export default function AdultsPage() {
       title: "그림책의 장면과 서사",
       subtitle: "어른 그림책 모임",
       desc: "익숙한 그림책 장면들을 낯설고 신선하게 다시 바라보는 시간. 논제 중심의 이야기로 그림책을 바라보는 폭을 넓혀갑니다.",
-      meta: null,
+      meta: ["&nbsp;"],
       link: null,
     },
     {
