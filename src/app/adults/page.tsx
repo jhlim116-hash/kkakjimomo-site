@@ -24,8 +24,7 @@ const hoverStyle = `
   .adults-nav { padding: 18px 40px; }
   .adults-hero { padding: 72px 40px 64px; }
   .adults-hero-title { font-size: 44px; }
-  .adults-grid { grid-template-columns: 1fr 1fr; border-left: 2px solid #0a0a0a; border-top: 2px solid #0a0a0a; }
-  .adults-contact { padding: 72px 40px; }
+.adults-grid { grid-template-columns: 1fr 1fr; border-left: 2px solid #0a0a0a; border-top: 2px solid #0a0a0a; align-items: stretch; }  .adults-contact { padding: 72px 40px; }
   .adults-footer { padding: 28px 40px; }
   .workshop-grid { grid-template-columns: 1fr 1fr; }
 
@@ -97,6 +96,8 @@ export default function AdultsPage() {
     padding: "1.75rem 1.5rem",
     display: "flex",
     flexDirection: "column",
+    height: "100%",
+    boxSizing: "border-box",
   };
 
   return (
