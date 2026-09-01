@@ -70,7 +70,6 @@ export default function KidsPage() {
   ];
 
   return (
-      return (
     <main style={{fontFamily:"Pretendard,-apple-system,sans-serif",background:"#fff",minHeight:"100vh",letterSpacing:"-0.012em",maxWidth:"900px",margin:"0 auto",boxShadow:"0 0 0 0.5px #eee"}}>
       <style>{`
         .kids-nav { padding: 18px 40px; }
@@ -80,6 +79,7 @@ export default function KidsPage() {
         .kids-grid { grid-template-columns: 1fr 360px; gap: 64px; }
         .kids-no { font-size: 120px; }
         .kids-title { font-size: 28px; }
+        .kids-body { max-width: 480px; }
         .kids-contact { padding: 72px 40px; }
         .kids-footer { padding: 28px 40px; }
         @media (max-width: 768px) {
@@ -90,6 +90,7 @@ export default function KidsPage() {
           .kids-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
           .kids-no { font-size: 72px !important; margin-bottom: -8px !important; }
           .kids-title { font-size: 22px !important; }
+          .kids-body { max-width: 100% !important; }
           .kids-contact { padding: 48px 20px !important; }
           .kids-footer { padding: 24px 20px !important; }
         }
@@ -126,7 +127,7 @@ export default function KidsPage() {
                 <div style={{fontSize:"14px",fontStyle:"italic",color:"#0A0A0A",lineHeight:1.6,marginBottom:"8px"}}>"{p.quote}"</div>
                 <div style={{fontFamily:"monospace",fontSize:"10px",color:"#888"}}>{p.quoteBy}</div>
               </div>
-              <div style={{fontSize:"13px",color:"#555",lineHeight:2}}>
+              <div className="kids-body" style={{fontSize:"13px",color:"#555",lineHeight:2}}>
                 {p.body(U)}
               </div>
             </div>
