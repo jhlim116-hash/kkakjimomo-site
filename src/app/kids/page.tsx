@@ -70,7 +70,8 @@ export default function KidsPage() {
   ];
 
   return (
-    <main style={{fontFamily:"Pretendard,-apple-system,sans-serif",background:"#fff",minHeight:"100vh",letterSpacing:"-0.012em"}}>
+      return (
+    <main style={{fontFamily:"Pretendard,-apple-system,sans-serif",background:"#fff",minHeight:"100vh",letterSpacing:"-0.012em",maxWidth:"900px",margin:"0 auto",boxShadow:"0 0 0 0.5px #eee"}}>
       <style>{`
         .kids-nav { padding: 18px 40px; }
         .kids-hero { padding: 72px 40px 64px; }
