@@ -108,7 +108,7 @@ export default function AdultsPage() {
   };
 
   return (
-    <main style={{fontFamily:"Pretendard,-apple-system,sans-serif",background:"#fff",minHeight:"100vh",letterSpacing:"-0.012em"}}>
+    <main style={{fontFamily:"Pretendard,-apple-system,sans-serif",background:"#fff",minHeight:"100vh",letterSpacing:"-0.012em",maxWidth:"900px",margin:"0 auto",boxShadow:"0 0 0 0.5px #eee"}}>
       <style>{hoverStyle}</style>
 
       <nav className="adults-nav" style={{display:"flex",alignItems:"center",justifyContent:"space-between",borderBottom:"0.5px solid #EAEAEA"}}>
